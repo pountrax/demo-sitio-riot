@@ -1,0 +1,36 @@
+/* para cambiar todo dependiendo de si 
+tenemos modo obscuro o claro hacemos: */
+@media (prefers-color-scheme: light){
+    body{
+        background-color:white;
+    }
+    header{
+        background-image:url(../img/teemo.jpg);
+        background-size:cover;
+        background-position:center center;
+        height:100vh
+    }
+    nav{
+        background-color:rgba(0, 0,0, 0.1)
+    }
+    nav ul li > a{
+        padding:20px 15px 10px 15px;
+    }
+    body{
+        background-color: black;
+    }
+    /*
+    ----------------
+    mobile
+    --------------- 
+    */
+    nav .mobile .header{
+    background-color:transparent
+    }
+    nav .mobile .links{
+        background-color: transparent;
+    }
+}
+@media (prefers-color-scheme: dark){
+    
+}
